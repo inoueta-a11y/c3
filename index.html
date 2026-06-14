@@ -315,11 +315,11 @@
           </h2>
 
           <div class="space-y-12">
-            <!-- 理容室経営 (ヘアーサロンINA) - 高品質のお洒落な美容室・理容室写真 -->
+            <!-- 理容室経営 (ヘアーサロンINA) - 店舗情報に電話番号（029-832-2139）を追加 -->
             <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
               <div class="md:flex">
                 <div class="md:w-1/2">
-                  <img src="IMG_0031.JPG" alt="ヘアーサロンINA 店舗風景" class="w-full h-full object-cover min-h-[300px]" />
+                  <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="ヘアーサロンINA 店舗風景" class="w-full h-full object-cover min-h-[300px]" />
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-white to-emerald-50/20">
                   <span class="bg-emerald-800 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">地域密着型サービス</span>
@@ -329,16 +329,23 @@
                     小さなお子様からご年配の方まで、地域の皆様に長く愛されるアットホームなヘアサロンを目指し、日々の営業を続けております。
                     人と地域との繋がり、日常の対話を何よりも大切にしており、単に髪を整える場所というだけでなく、皆様の心が休まる心地良い憩いの空間として、信頼を寄せていただいております。
                   </p>
-                  <p class="text-gray-650 text-xs italic">所在地：茨城県土浦市神立町 （各種お問い合わせは店舗、または弊社窓口までお気軽にどうぞ）</p>
+                  <p class="text-gray-650 text-xs italic">
+                    所在地：茨城県土浦市神立町６８２−４ / <strong>店舗電話番号：029-832-2139</strong> （各種ご予約やお問い合わせは店舗までお気軽にどうぞ）
+                  </p>
                 </div>
               </div>
             </div>
 
-            <!-- ヨーロッパ家具の輸入・販売 - PXL_20260603_053233608.jpg -->
+            <!-- ヨーロッパ家具の輸入・販売 (静的画像埋め込み) -->
             <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
               <div class="md:flex md:flex-row-reverse">
                 <div class="md:w-1/2 relative bg-gray-100 min-h-[350px]">
-                  <img src="PXL_20260603_053233608.JPG" class="w-full h-full min-h-[350px]">
+                  <img 
+                    src="./PXL_20260603_053233608.jpg" 
+                    alt="ヨーロッパ輸入家具 展示ショールーム" 
+                    class="w-full h-full object-cover min-h-[350px]"
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80';"
+                  />
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-white to-amber-50/20">
                   <span class="bg-amber-800 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">空間プロデュース</span>
@@ -348,12 +355,12 @@
                     独自のグローバルアライアンスを活かし、気品溢れる大理石トップの豪華なダイニングテーブル、繊細な彫刻が施された木製チェア、優美なガラスキャビネットなどの直輸入仲介・販売コーディネートを行っております。
                     こだわり抜いた空間を創造したいホテル・店舗様や、特別感のあるインテリアを求められる個人邸・リノベーション物件に向けて、「一生ものの出会い」をお届けします。
                   </p>
-                  <div class="bg-amber-50 border border-amber-100 p-4 rounded text-xs text-amber-900 leading-relaxed mb-4">
+                  <div class="bg-amber-50 border border-amber-100 p-4 rounded text-xs text-amber-900 leading-relaxed">
                     <span class="font-bold">【ご提案の流れ】</span>
                     お客様の求める空間イメージをお伺いし、最適なメーカーや職人、アンティークマーケットから買付・輸入手続き、丁寧な配送設置までをワンストップで調整いたします。
                   </div>
                   <!-- お問い合わせへ直接つなぐボタン -->
-                  <button onclick="showPage('contact')" class="bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold py-2.5 px-4 rounded inline-flex items-center w-max shadow transition-all hover:scale-105">
+                  <button onclick="showPage('contact')" class="bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold py-2.5 px-4 rounded inline-flex items-center w-max shadow transition-all hover:scale-105 mt-4">
                     <i data-lucide="mail" class="mr-1.5 h-4 w-4"></i>
                     輸入家具のご相談・お問い合わせはこちら
                   </button>
@@ -409,8 +416,8 @@
 
           <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
             <h3 class="text-xl font-bold text-emerald-900 mb-3">4. 建設関連ネットワーク支援</h3>
-            <p class="text-gray-700 mb-3">建設関連分野において、各種事業者とのネットワークを活用し、相談内容に応じた事業者紹介、情報共有、事業調整等を行っております。</p>
-            <p class="text-gray-700 mb-3">電気設備、計装、塗装、内装、外構、造成、運搬等、必要な分野に応じて、適任の事業者と連携しながら、事業が円滑に進むよう支援しております。</p>
+            <p class="text-gray-700 mb-3">建設関連分野において、各種事業者とのネットワークを活用し、相談内容に応じた事業者紹介, 情報共有、事業調整等を行っております。</p>
+            <p class="text-gray-700 mb-3">電気設備、計装、塗装、内装、外構、造成、運搬等, 必要な分野に応じて、適任の事業者と連携しながら、事業が円滑に進むよう支援しております。</p>
             <p class="text-gray-700 text-sm">当社は、無理に自社のみで対応するのではない、内容に応じて専門性を持つ事業者へつなぐことを大切にしております。</p>
           </div>
 
@@ -418,7 +425,7 @@
           <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
             <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full w-max mb-3 block">経営サポート</span>
             <h3 class="text-xl font-bold text-emerald-900 mb-3">飲食店運営経験を活かした相談活動</h3>
-            <p class="text-gray-700 mb-3">過去にラーメン店をはじめとする飲食店を実際に開業・運営していた経験をベースに、店舗運営、開業、メニュー開発、集客対策、店舗の撤退にいたるまで、現場目線に立った親身なアドバイスや情報交換を行っております。</p>
+            <p class="text-gray-700 mb-3">過去にラーメン店をはじめとする飲食店を実際に開業・運営していた経験をベースに、店舗運営、開業, メニュー開発、集客対策、店舗の撤退にいたるまで、現場目線に立った親身なアドバイスや情報交換を行っております。</p>
             <p class="text-gray-700 text-sm">無理なコンサルタントを気取るのではない、実際の店舗経営者の方々と同じ視点で、課題解決に必要な提携ネットワークへの紹介や橋渡しを含めた支援を重視しております。</p>
           </div>
 
@@ -440,20 +447,13 @@
 
           <!-- 次世代エネルギー関連事業 -->
           <div class="bg-emerald-50 p-8 rounded-lg border-2 border-emerald-100 mt-12">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
-              <h2 class="text-2xl font-bold text-emerald-900 flex items-center">
-                <span class="bg-emerald-800 text-white text-sm px-3 py-1 rounded-full mr-3">注目</span>
-                次世代エネルギー関連事業
-              </h2>
-              <button onclick="showPage('contact')" class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold py-2 px-4 rounded-lg inline-flex items-center shadow shadow-amber-300">
-                <i data-lucide="mail" class="mr-1.5 h-3.5 w-3.5"></i>
-                エネルギー事業のご相談
-              </button>
-            </div>
+            <h2 class="text-2xl font-bold text-emerald-900 mb-4 flex items-center">
+               <span class="bg-emerald-800 text-white text-sm px-3 py-1 rounded-full mr-3">注目</span>
+               次世代エネルギー関連事業
+            </h2>
             <p class="text-gray-800 mb-4 font-medium">株式会社シースリーでは、次世代エネルギー分野における事業連携支援及びプロジェクトコーディネートを行っております。</p>
             <p class="text-gray-700 mb-6">
-              近年注目されている <strong>ペロブスカイト太陽電池</strong> や <strong>系統用蓄電池関連事業</strong> について、土地所有者様、事業者様、関係企業様との橋渡しを行い, 事業が円滑に進むよう支援しております。
-            </p>
+              近年注目されている <strong>ペロブスカイト太陽電池</strong> や <strong>系統用蓄電池関連事業</strong> について、土地所有者様、事業者様、関係企業様との橋渡しを行い, 事業が円滑に進むよう支援しております。</p>
             
             <div class="bg-white p-6 rounded border border-emerald-100 mb-6">
               <h4 class="font-bold text-emerald-800 mb-3 border-b border-gray-100 pb-2">主な活動内容</h4>
@@ -471,7 +471,7 @@
             </div>
 
             <div class="bg-gray-800 text-white p-6 rounded shadow-inner">
-               <h4 className="font-bold text-emerald-400 mb-2">シースリーの役割（スタンス）</h4>
+               <h4 class="font-bold text-emerald-400 mb-2">シースリーの役割（スタンス）</h4>
                <p class="text-gray-300 text-sm leading-relaxed">
                  当社は、設計・施工・許認可業務を行う事業者ではなく、各分野の専門事業者と連携しながら、人と人、土地と事業、企業と地域をつなぐ調整役として活動しております。特定製品の販売や施工を目的とするものではなく、情報提供・導入検討に関する相談・関係事業者との連携支援を中心とした活動を行っております。
                </p>
@@ -527,7 +527,7 @@
                 <span class="font-bold w-48 text-emerald-800">平成23年〜平成25年</span>
                 <span class="flex-1">福島県いわき市勿来地区支援活動 / 福島県いわき市小名浜地区支援活動 / 宮城県石巻市復興支援活動 / 七ヶ浜支援活動 / 北上町十三浜支援活動 / 気仙沼支援活動 / 唐桑町支援活動 / 気仙沼大島支援活動 / 炊き出し支援活動 / ワカメ復興支援活動</span>
               </li>
-              <li class="flex flex-col sm:flex-row border-t border-gray-200 pt-4">
+              <li className="flex flex-col sm:flex-row border-t border-gray-200 pt-4">
                 <span class="font-bold w-48 text-emerald-800">平成25年</span>
                 <span class="flex-1">つくば市竜巻災害復興支援 / 山梨県豪雪災害復興支援</span>
               </li>
@@ -589,7 +589,7 @@
              <!-- 環境クリーンアップのイメージ写真 -->
              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80" alt="地域ボランティアの集まり" class="w-full h-64 object-cover rounded-lg mb-8 shadow-sm" />
              <p class="text-lg text-gray-700 leading-relaxed mb-4">
-              石岡市及び周辺地域では、近年、不法投棄問題や環境悪化問題が発生しております。<br />
+              石岡市及び周辺地域では、近年, 不法投棄問題や環境悪化問題が発生しております。<br />
               環境見守り隊では、地域住民の皆様と協力しながら、不法投棄防止及び地域環境保全活動を行っております。
              </p>
              <p class="text-lg text-gray-700 leading-relaxed font-medium">
@@ -629,9 +629,9 @@
                   <span class="mr-2">※</span>
                   活動は無理のない範囲で行います。
                 </li>
-                <li class="flex items-start">
+                <li className="flex items-start">
                   <span class="mr-2">※</span>
-                  危険箇所への立ち入り、無断撮影、個人情報の拡散、相手方との直接的なトラブルになる行為等は行いません。
+                  危険箇所への立ち入り, 無断撮影、個人情報の拡散、相手方との直接的なトラブルになる行為等は行いません。
                 </li>
                 <li class="flex items-start">
                   <span class="mr-2">※</span>
@@ -669,18 +669,18 @@
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden mb-12">
           <div class="md:flex">
-            <!-- 写真エリア -->
-            <div class="md:w-2/5 bg-gray-50 flex flex-col items-center justify-center p-8">
-              <div class="bg-white p-4 rounded-lg shadow-lg border border-gray-200 max-w-[320px] w-full text-center">
+            <!-- 写真エリア (ご要望通り、左右対等な md:w-1/2 に設定。お手元の実写真を綺麗にフィットさせて表示します) -->
+            <div class="md:w-1/2 bg-gray-50 flex flex-col items-center justify-center p-8 border-r border-gray-100">
+              <div class="bg-white p-4 rounded-lg shadow-lg border border-gray-200 w-full text-center">
                 <!-- 動的ロード or アップローダー救済画像 -->
-                <img src="C1DD659CCBFB50B4084C9D66E95D25D6E801B8E8.JPG" class="relative w-full h-auto">
+                <div id="profile-img-container" class="relative w-full h-auto"></div>
                 <div class="mt-3 text-xs text-emerald-800 font-semibold tracking-wider">
                   温かい人と人との繋がりを大切に
                 </div>
               </div>
             </div>
             
-            <div class="md:w-3/5 p-8 md:p-10 flex flex-col justify-center">
+            <div class="md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
               <h2 class="text-3xl font-bold text-gray-900 mb-2">中村 健作</h2>
               <p class="text-gray-500 mb-6 font-medium">代表取締役</p>
               
@@ -768,24 +768,26 @@
                 <td class="py-4 px-6 text-gray-700 text-sm md:text-base">茨城県南地域・栃木県宇都宮市周辺</td>
               </tr>
               <tr class="border-b border-gray-200 hover:bg-gray-50">
-                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">理容室所在地</th>
-                <td class="py-4 px-6 text-gray-700 text-sm md:text-base">茨城県土浦市神立町</td>
+                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">会社電話番号</th>
+                <td class="py-4 px-6 text-gray-700 text-sm md:text-base">029-896-6099</td>
+              </tr>
+              <tr class="border-b border-gray-200 hover:bg-gray-50">
+                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">メールアドレス</th>
+                <td class="py-4 px-6 text-gray-750 text-sm md:text-base">
+                  <a href="mailto:c3nakamura@ozzio.jp" class="text-emerald-800 hover:underline">c3nakamura@ozzio.jp</a>
+                </td>
               </tr>
               <tr class="border-b border-gray-200 hover:bg-gray-50">
                 <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">理容室名</th>
                 <td class="py-4 px-6 text-gray-700 text-sm md:text-base">ヘアーサロンINA</td>
               </tr>
               <tr class="border-b border-gray-200 hover:bg-gray-50">
-                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">電話番号</th>
-                <td class="py-4 px-6 text-gray-500 italic text-sm md:text-base">（掲載予定）</td>
-              </tr>
-              <tr class="border-b border-gray-200 hover:bg-gray-50">
-                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">メールアドレス</th>
-                <td class="py-4 px-6 text-gray-500 italic text-sm md:text-base">（掲載予定）</td>
+                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">理容室所在地</th>
+                <td class="py-4 px-6 text-gray-700 text-sm md:text-base">茨城県土浦市神立町６８２−４</td>
               </tr>
               <tr class="hover:bg-gray-50">
-                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">SNS</th>
-                <td class="py-4 px-6 text-gray-500 italic text-sm md:text-base">（掲載予定）</td>
+                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">理容室電話番号</th>
+                <td class="py-4 px-6 text-gray-700 text-sm md:text-base">029-832-2139</td>
               </tr>
             </tbody>
           </table>
@@ -795,7 +797,7 @@
           <h3 class="text-lg font-bold text-emerald-400 mb-3">連携対応について</h3>
           <p class="text-sm leading-relaxed text-gray-300">
             当社は, 相談内容に応じて、各分野の専門事業者及び関係機関と連携しながら対応しております。<br />
-            不動産売買・仲介、建設工事、各種許認可申請、専門的施工等については、必要に応じて適任の有資格者、許可業者、専門事業者と連携して対応致します。
+            不動産売買・仲介、建設工事、各種許認加申請、専門的施工等については、必要に応じて適任の有資格者、許可業者、専門事業者と連携して対応致します。
           </p>
         </div>
       </div>
@@ -983,6 +985,7 @@
       document.getElementById('mobile-menu').classList.add('hidden');
     }
 
+    // モバイルメニューのトグル
     function toggleMobileMenu() {
       const menu = document.getElementById('mobile-menu');
       menu.classList.toggle('hidden');
@@ -997,17 +1000,8 @@
         'profile-img-container',
         'C1DD659CCBFB50B4084C9D66E95D25D6E801B8E8.jpg',
         '代表 中村健作',
-        'w-full h-auto object-cover rounded shadow-inner max-h-[380px]',
+        'w-full h-auto object-cover rounded shadow-inner max-h-[450px]',
         '代表：中村健作（お写真の読み込み中）'
-      );
-
-      // 2. ヨーロッパ家具写真枠の描画 (PXL_20260603_053233608.jpg)
-      renderRobustImage(
-        'furniture-img-container',
-        'PXL_20260603_053233608.jpg',
-        'ヨーロッパ輸入家具 展示ショールーム',
-        'w-full h-full object-cover min-h-[350px] rounded-lg shadow-sm',
-        'ヨーロッパ輸入家具 ショールーム（お写真の読み込み中）'
       );
     }
 
@@ -1060,7 +1054,7 @@
         container.innerHTML = `
           <div class="relative group">
             <img src="${src}" alt="${alt}" class="${className}" />
-            <div class="absolute bottom-2 left-2 right-2 bg-black/60 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity p-2 rounded text-center">
+            <div class="absolute bottom-2 left-2 right-2 bg-black/60 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity p-2 rounded text-center col-span-full">
               <label class="cursor-pointer text-white text-[9px] font-bold py-1 px-2 rounded inline-flex items-center justify-center">
                 <i data-lucide="upload" class="mr-1 h-3 w-3"></i>
                 別の写真をアップロード
@@ -1140,6 +1134,7 @@
       }
     }
 
+    // ヒーロー画像の表示先を設定する処理
     function setHeroImgSrc(src) {
       const img = document.getElementById('hero-img');
       const loader = document.getElementById('hero-loader');
@@ -1150,6 +1145,7 @@
       }
     }
 
+    // ヒーローコントロールパネルのトグル表示
     function toggleHeroControl(show) {
       const openBtn = document.getElementById('hero-ctrl-open-btn');
       const panel = document.getElementById('hero-ctrl-panel');
@@ -1162,12 +1158,14 @@
       }
     }
 
+    // おすすめプロンプトの適用
     function applyPreset(index) {
       const prompt = heroPresets[index];
       document.getElementById('hero-prompt-input').value = prompt;
       triggerHeroGeneration(prompt);
     }
 
+    // カスタムプロンプト送信
     function handleCustomHeroSubmit(e) {
       e.preventDefault();
       const prompt = document.getElementById('hero-prompt-input').value;
@@ -1175,6 +1173,7 @@
       triggerHeroGeneration(prompt);
     }
 
+    // ヒーロー画像生成
     async function triggerHeroGeneration(promptText) {
       const overlay = document.getElementById('hero-generating-overlay');
       const errEl = document.getElementById('hero-gen-error');
@@ -1226,6 +1225,7 @@
       overlay.classList.add('hidden');
     }
 
+    // ヒーロー画像初期化
     function resetHeroImage() {
       localStorage.removeItem('c3_hero_image');
       const loader = document.getElementById('hero-loader');
