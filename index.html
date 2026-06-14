@@ -4,6 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社シースリー - 地域と環境を守り、人と事業をつなぐ</title>
+  
+  <!-- ==========================================
+       【かんたん画像一括差し替えエリア】
+       ホームページで使用している全ての画像をここで一元管理しています。
+       画像を差し替える場合は、右側のダブルクォーテーション（ "" ）の中身を、
+       新しく用意した画像のファイル名やURLに書き換えるだけで自動反映されます。
+       ========================================== -->
+  <script>
+    const IMAGE_MASTER = {
+      // 1. トップページの背景写真 (オフィス背景)
+      heroBg: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+      
+      // 2. 事業内容：理容室経営（ヘアーサロンINA）の店舗内観・外観写真
+      barber: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80",
+      
+      // 3. 事業内容：ヨーロッパ輸入家具の写真 (実ファイル名: "./PXL_20260603_053233608.jpg")
+      furniture: "./PXL_20260603_053233608.jpg",
+      
+      // 4. 事業内容：1. 地域環境整備・土地活用提案の写真
+      landProposal: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80",
+      
+      // 5. 事業内容：2. 盛土関連事業の写真
+      embankment: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      
+      // 6. 地域活動：災害支援ボランティアの写真
+      disasterVolunteer: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80",
+      
+      // 7. 地域活動：環境見守り活動（ゴミ拾い・清掃パトロール）の写真
+      cleanupActivity: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=800&q=80",
+      
+      // 8. 環境見守り隊：ボランティア募集ページのメイン写真
+      volunteerRecruit: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80"
+    };
+  </script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -118,9 +153,8 @@
     <div id="page-home" class="page-section active">
       <!-- ヒーローセクション -->
       <div class="relative bg-gray-950 h-96 md:h-[500px] flex items-center justify-center overflow-hidden">
-        
-        <!-- 背景：おしゃれなオフィス画像 -->
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80" alt="スタイリッシュなモダンオフィス" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <!-- トップページのメイン背景写真 (imgタグ。srcは最上部のIMAGE_MASTERから自動設定されます) -->
+        <img id="img-hero-bg" src="" alt="スタイリッシュなモダンオフィス" class="absolute inset-0 w-full h-full object-cover opacity-40" />
         <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/50 to-emerald-950/20 z-0"></div>
 
         <div class="relative z-10 text-center px-4 max-w-4xl">
@@ -199,7 +233,7 @@
         </div>
 
         <!-- 企業理念 -->
-        <div class="bg-emerald-900 text-white rounded-lg p-8 md:p-12 mb-16 relative overflow-hidden">
+        <div class="bg-emerald-950 text-white rounded-lg p-8 md:p-12 mb-16 relative overflow-hidden">
           <div class="relative z-10">
             <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center border-b border-emerald-700 pb-4 inline-block">企業理念</h2>
             <div class="text-center mb-8">
@@ -259,7 +293,8 @@
             <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
               <div class="md:flex">
                 <div class="md:w-1/2">
-                  <img src="IMG_0031.JPG" alt="ヘアーサロンINA 店舗風景" class="w-full h-full object-cover min-h-[300px]" />
+                  <!-- 理容室写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
+                  <img id="img-barber" src="" alt="ヘアーサロンINA 店舗風景" class="w-full h-full object-cover min-h-[300px]" />
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-white to-emerald-50/20">
                   <span class="bg-emerald-800 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">地域密着型サービス</span>
@@ -280,12 +315,8 @@
             <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
               <div class="md:flex md:flex-row-reverse">
                 <div class="md:w-1/2 relative bg-gray-100 min-h-[350px]">
-                  <img 
-                    src="./PXL_20260603_053233608.jpg" 
-                    alt="ヨーロッパ輸入家具 展示ショールーム" 
-                    class="w-full h-full object-cover min-h-[350px]"
-                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80';"
-                  />
+                  <!-- ヨーロッパ輸入家具写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
+                  <img id="img-furniture" src="" alt="ヨーロッパ輸入家具 展示ショールーム" class="w-full h-full object-cover min-h-[350px]" />
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-white to-amber-50/20">
                   <span class="bg-amber-800 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">空間プロデュース</span>
@@ -316,24 +347,26 @@
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <!-- 事業項目1 - 土地、遊休地の高品質イメージ画像 -->
+          <!-- 事業項目1 - 土地、遊休地の写真 -->
           <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80" alt="荒廃地・遊休地の緑野" class="w-full h-48 object-cover" />
+             <!-- 土地活用写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
+             <img id="img-land-proposal" src="" alt="荒廃地・遊休地の緑野" class="w-full h-48 object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-bold text-emerald-900 mb-3 border-b-2 border-emerald-100 pb-2">1. 地域環境整備・土地活用提案</h3>
               <p class="text-gray-700 mb-3 text-sm leading-relaxed">荒廃地、遊休地、谷地形、管理が行き届きにくい土地等について、地域環境改善、安全性向上、土地の有効活用を目的とした提案活動を行っております。</p>
               <p class="text-gray-700 mb-3 text-sm leading-relaxed">長年管理が難しくなった土地では、雑草や竹木の繁茂、不法投棄、害虫・有害鳥獣の発生、火災時の延焼リスク等が懸念される場合があります。</p>
-              <p class="text-gray-700 text-sm leading-relaxed">当社では、地域住民の皆様、地主様、関係事業者、関係機関との対話を重視し、地域環境の改善につながる方法を検討し、事業化に向けた調整を行っております。</p>
+              <p class="text-gray-700 text-sm leading-relaxed">当社では、地域住民の皆様, 地主様、関係事業者、関係機関との対話を重視し、地域環境の改善につながる方法を検討し、事業化に向けた調整を行っております。</p>
             </div>
           </div>
 
-          <!-- 事業項目2 - 盛土・開発現場の測量・設計イメージ画像 -->
+          <!-- 事業項目2 - 盛土・開発現場の測量・設計写真 -->
           <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="測量・現場調査の様子" class="w-full h-48 object-cover" />
+             <!-- 盛土写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
+             <img id="img-embankment" src="" alt="測量・現場調査の様子" class="w-full h-48 object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-bold text-emerald-900 mb-3 border-b-2 border-emerald-100 pb-2">2. 盛土関連事業の調整・取りまとめ</h3>
               <p class="text-gray-700 mb-3 text-sm leading-relaxed">地域環境改善及び土地の有効活用を目的とした盛土関連事業について、地主様対応、地域説明、関係事業者との調整、事業計画の取りまとめ等を行っております。</p>
-              <p class="text-gray-700 mb-3 text-sm leading-relaxed">盛土関連事業は、地域住民の皆様の理解、安全対策、法令順守、行政手続き、関係事業者との連携が重要となる事業です。</p>
+              <p class="text-gray-700 mb-3 text-sm leading-relaxed">盛土関連事業は、地域住民の皆様の理解, 安全対策, 法令順守, 行政手続き, 関係事業者との連携が重要となる事業です。</p>
               <p class="text-gray-700 text-sm leading-relaxed">当社では、必要に応じて測量, 設計, 施工、運搬、各種申請等に関わる専門事業者と連携し、事業全体が適切かつ円滑に進むよう調整を行っております。当社は、地域との対話を大切にし、不安や疑問を残さない丁寧な説明を心掛け、透明性のある事業推進に努めております。</p>
             </div>
           </div>
@@ -413,7 +446,7 @@
             <div class="bg-gray-800 text-white p-6 rounded shadow-inner">
                <h4 class="font-bold text-emerald-400 mb-2">シースリーの役割（スタンス）</h4>
                <p class="text-gray-300 text-sm leading-relaxed">
-                 当社は、設計・施工・許認可業務を行う事業者ではなく、各分野の専門事業者と連携しながら、人と人、土地と事業、企業と地域をつなぐ調整役として活動しております。特定製品の販売や施工を目的とするものではなく、情報提供・導入検討に関する相談・関係事業者との連携支援を中心とした活動を行っております。
+                 当社は、設計・施工・許認可業務を行う事業者ではなく、各分野 of 専門事業者と連携しながら、人と人、土地と事業、企業と地域をつなぐ調整役として活動しております。特定製品の販売や施工を目的とするものではなく、情報提供・導入検討に関する相談・関係事業者との連携支援を中心とした活動を行っております。
                </p>
             </div>
           </div>
@@ -440,9 +473,10 @@
 
         <div class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden mb-12">
           <div class="md:flex">
-            <!-- 災害支援ボランティアの高品質活動画像 -->
+            <!-- 災害支援ボランティアの写真 -->
             <div class="md:w-1/3">
-              <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80" alt="災害ボランティア活動・炊き出し風景" class="w-full h-full min-h-[300px] object-cover" />
+              <!-- 災害支援写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
+              <img id="img-disaster-volunteer" src="" alt="災害ボランティア活動・炊き出し風景" class="w-full h-full min-h-[300px] object-cover" />
             </div>
             <div class="md:w-2/3 p-8">
               <h2 class="text-2xl font-bold text-emerald-900 mb-4">東日本大震災 災害支援活動</h2>
@@ -483,7 +517,8 @@
         <div class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
           <div class="md:flex flex-row-reverse">
             <div class="md:w-1/3">
-              <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=800&q=80" alt="環境ボランティア・ゴミ拾い活動" class="w-full h-full min-h-[300px] object-cover" />
+              <!-- 環境活動写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
+              <img id="img-cleanup-activity" src="" alt="環境ボランティア・ゴミ拾い活動" class="w-full h-full min-h-[300px] object-cover" />
             </div>
             <div class="md:w-2/3 p-8">
               <h2 class="text-2xl font-bold text-emerald-900 mb-4">環境見守り活動</h2>
@@ -526,8 +561,8 @@
         <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 md:p-12 -mt-16 relative z-10">
           
           <div class="mb-10">
-             <!-- 環境クリーンアップのイメージ写真 -->
-             <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80" alt="地域ボランティアの集まり" class="w-full h-64 object-cover rounded-lg mb-8 shadow-sm" />
+             <!-- 環境クリーンアップのイメージ写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
+             <img id="img-volunteer-recruit" src="" alt="地域ボランティアの集まり" class="w-full h-64 object-cover rounded-lg mb-8 shadow-sm" />
              <p class="text-lg text-gray-700 leading-relaxed mb-4">
               石岡市及び周辺地域では、近年, 不法投棄問題や環境悪化問題が発生しております。<br />
               環境見守り隊では、地域住民の皆様と協力しながら、不法投棄防止及び地域環境保全活動を行っております。
@@ -648,7 +683,7 @@
             <div class="space-y-4 text-gray-800 leading-relaxed text-sm md:text-base">
               <p>はじめまして。株式会社シースリー代表の中村健作と申します。</p>
               <p>私は, 地域環境整備活動、土地活用関連相談、盛土関連事業の調整、建設関連ネットワーク支援等に携わる一方、地域環境保全活動や災害支援活動にも取り組んでおります。</p>
-              <p>私は、すべてを自社のみで行うのではなく、それぞれの分野に精通した専門事業者、地域関係者、関係機関と連携しながら、事業を形にしていく調整役として活動しております。</p>
+              <p>私は、すべてを自社のみで行うのではない、それぞれの分野に精通した専門事業者、地域関係者、関係機関と連携しながら、事業を形にしていく調整役として活動しております。</p>
               <p>東日本大震災をきっかけに、「地域のために出来ることを続けたい」という思いを持つようになりました。<br />現在は、不法投棄問題、環境問題、地域安全問題、土地管理の問題など、地域が抱える様々な課題に対し, 地域住民の皆様、地主様、関係事業者の皆様と協力しながら活動を行っております。</p>
               <p>今後も, 地域との対話を大切にし、安全性, 透明性、法令順守を重視した活動を続けて参ります。何卒宜しくお願い申し上げます。</p>
               <p class="pt-4 font-bold text-right text-sm md:text-base">株式会社シースリー<br />代表取締役　中村健作</p>
@@ -678,7 +713,7 @@
                 <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold w-1/3 md:w-1/4 text-sm md:text-base">会社名</th>
                 <td class="py-4 px-6 text-gray-700 text-sm md:text-base">株式会社シースリー</td>
               </tr>
-              <!-- 法人番号を追加 -->
+              <!-- 法人番号 -->
               <tr class="border-b border-gray-200 hover:bg-gray-50">
                 <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">法人番号</th>
                 <td class="py-4 px-6 text-gray-700 text-sm md:text-base font-mono">8050001040000</td>
@@ -697,7 +732,7 @@
               </tr>
               <tr class="border-b border-gray-200 hover:bg-gray-50">
                 <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">活動地域</th>
-                <td class="py-4 px-6 text-gray-700 text-sm md:text-base">茨城県南地域・栃木県宇都宮市周辺</td>
+                <td class="py-4 px-6 text-gray-700 text-sm md:text-base">北関東地域</td>
               </tr>
               <tr class="border-b border-gray-200 hover:bg-gray-50">
                 <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">会社電話番号</th>
@@ -708,6 +743,10 @@
                 <td class="py-4 px-6 text-gray-750 text-sm md:text-base">
                   <a href="mailto:c3nakamura@ozzio.jp" class="text-emerald-800 hover:underline">c3nakamura@ozzio.jp</a>
                 </td>
+              </tr>
+              <tr class="border-b border-gray-200 hover:bg-gray-50">
+                <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">取引銀行</th>
+                <td class="py-4 px-6 text-gray-700 text-sm md:text-base">筑波銀行</td>
               </tr>
               <tr class="border-b border-gray-200 hover:bg-gray-50">
                 <th class="py-4 px-6 bg-gray-50 text-gray-800 font-bold text-sm md:text-base">理容室名</th>
@@ -728,7 +767,7 @@
         <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md">
           <h3 class="text-lg font-bold text-emerald-400 mb-3">連携対応について</h3>
           <p class="text-sm leading-relaxed text-gray-300">
-            当社は, 相談内容に応じて、各分野の専門事業者及び関係機関と連携しながら対応しております。<br />
+            当社は, 相談内容に応じて, 各分野の専門事業者及び関係機関と連携しながら対応しております。<br />
             不動産売買・仲介、建設工事、各種許認加申請、専門的施工等については、必要に応じて適任の有資格者、許可業者、専門事業者と連携して対応致します。
           </p>
         </div>
@@ -851,7 +890,7 @@
       
       <div class="border-t border-gray-800 pt-8 mt-8">
         <p class="text-xs text-gray-400 leading-relaxed mb-4">
-          ※当社は、相談内容に応じて, 各分野の専門事業者及び関係機関と連携しながら対応しております。<br />
+          ※当社は, 相談内容に応じて, 各分野の専門事業者及び関係機関と連携しながら対応しております。<br />
           不動産売買・仲介、建設工事、各種許認可申請、専門的施工等については、必要に応じて適任の有資格者、許可業者、専門事業者と連携して対応致します。
         </p>
         <p class="text-center text-gray-500 text-sm">
@@ -862,19 +901,55 @@
   </footer>
 
   <!-- ==========================================
-       JavaScript：動的制御、SPA遷移制御
+       JavaScript：動的制御、画像の一元管理・適用
        ========================================== -->
   <script>
     // ------------------------------------------
     // 初期セットアップ
     // ------------------------------------------
     window.addEventListener('DOMContentLoaded', () => {
-      // Lucideアイコンの初期化
+      // 1. 各画像の src 属性を IMAGE_MASTER から自動的に一括適用します
+      applyImageMaster();
+
+      // 2. Lucideアイコンの初期化
       lucide.createIcons();
       
-      // フッターの年号セット
+      // 3. フッターの年号セット
       document.getElementById('current-year').textContent = new Date().getFullYear();
     });
+
+    // ------------------------------------------
+    // 【画像一括適用エンジン】
+    // 最上部で定義した IMAGE_MASTER の内容を、対応するすべての <img> タグへ反映します。
+    // ------------------------------------------
+    function applyImageMaster() {
+      const mappings = {
+        'img-hero-bg': IMAGE_MASTER.heroBg,
+        'img-barber': IMAGE_MASTER.barber,
+        'img-furniture': IMAGE_MASTER.furniture,
+        'img-land-proposal': IMAGE_MASTER.landProposal,
+        'img-embankment': IMAGE_MASTER.embankment,
+        'img-disaster-volunteer': IMAGE_MASTER.disasterVolunteer,
+        'img-cleanup-activity': IMAGE_MASTER.cleanupActivity,
+        'img-volunteer-recruit': IMAGE_MASTER.volunteerRecruit
+      };
+
+      for (const [id, src] of Object.entries(mappings)) {
+        const img = document.getElementById(id);
+        if (img) {
+          img.src = src;
+          
+          // 【家具お写真のセーフガード処理】
+          // もし指定のパスに画像が配置されていない場合、見栄えを保つためフォールバック写真を自動表示します
+          if (id === 'img-furniture') {
+            img.onerror = function() {
+              this.onerror = null;
+              this.src = 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80';
+            };
+          }
+        }
+      }
+    }
 
     // ------------------------------------------
     // ページ切り替えルーター (SPA動作)
