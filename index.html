@@ -188,7 +188,7 @@
         <!-- 背景：おしゃれなオフィス画像 -->
         <!-- 【画像差し替え】トップページのメイン背景写真 (オフィス背景)
              - src属性の中に、使いたい画像ファイルのパス（例: "images/hero_office.jpg"）を直接書き込んでください。 -->
-        <img id="img-hero-bg" src="" alt="スタイリッシュなモダンオフィス" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <img id="img-hero-bg" src="" alt="スタイリッシュなモダンオフィス" class="absolute inset-0 w-full h-full object-cover opacity-40 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
         <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/50 to-emerald-950/20 z-0"></div>
 
         <div class="relative z-10 text-center px-4 max-w-4xl">
@@ -328,7 +328,7 @@
               <div class="md:flex">
                 <div class="md:w-1/2">
                   <!-- 理容室写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
-                  <img id="img-barber" src="" alt="ヘアーサロンINA 店舗風景" class="w-full h-full object-cover min-h-[300px]" />
+                  <img id="img-barber" src="" alt="ヘアーサロンINA 店舗風景" class="w-full h-full object-cover min-h-[300px] cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-white to-emerald-50/20">
                   <span class="bg-emerald-800 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">地域密着型サービス</span>
@@ -353,24 +353,24 @@
                     </button>
                   </div>
 
-                  <!-- 理容室の参考画像 -->
+                  <!-- 理容室の参考画像 (クリックで拡大表示可能) -->
                   <div class="border-t border-gray-150 pt-4 mt-2">
-                    <span class="text-xs font-bold text-gray-400 block mb-2">✂ サロン内観・スタイル参考</span>
+                    <span class="text-xs font-bold text-gray-400 block mb-2">✂ サロン内観・スタイル参考 (クリックで拡大します)</span>
                     <div class="grid grid-cols-5 gap-1.5">
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-gray-200">
-                        <img id="img-barber-ref1" src="" alt="参考1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-barber-ref1" src="" alt="ヘアーサロンINA 施術スタイル 1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-gray-200">
-                        <img id="img-barber-ref2" src="" alt="参考2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-barber-ref2" src="" alt="ヘアーサロンINA 施術スタイル 2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-gray-200">
-                        <img id="img-barber-ref3" src="" alt="参考3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-barber-ref3" src="" alt="ヘアーサロンINA 施術スタイル 3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-gray-200">
-                        <img id="img-barber-ref4" src="" alt="参考4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-barber-ref4" src="" alt="ヘアーサロンINA 施術スタイル 4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-gray-200">
-                        <img id="img-barber-ref5" src="" alt="参考5" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-barber-ref5" src="" alt="ヘアーサロンINA 店舗内観" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                     </div>
                   </div>
@@ -384,7 +384,7 @@
               <div class="md:flex md:flex-row-reverse">
                 <div class="md:w-1/2 relative bg-gray-100 min-h-[350px]">
                   <!-- ヨーロッパ輸入家具写真 (srcは最上部のIMAGE_MASTERから自動設定されます) -->
-                  <img id="img-furniture" src="" alt="ヨーロッパ輸入家具 展示ショールーム" class="w-full h-full object-cover min-h-[350px]" />
+                  <img id="img-furniture" src="" alt="ヨーロッパ輸入家具 展示ショールーム" class="w-full h-full object-cover min-h-[350px] cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-white to-amber-50/20">
                   <span class="bg-amber-800 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">空間プロデュース</span>
@@ -399,24 +399,24 @@
                     お客様の求める空間イメージをお伺いし、最適なメーカーや職人, アンティークマーケットから買付・輸入手続き, 丁寧な配送設置までをワンストップで調整いたします。
                   </div>
                   
-                  <!-- ヨーロッパ家具の参考画像 -->
+                  <!-- ヨーロッパ家具の参考画像 (クリックで拡大表示可能) -->
                   <div class="border-t border-amber-200 pt-4 mb-6">
-                    <span class="text-xs font-bold text-amber-900/60 block mb-2">✨ 輸入家具・ヨーロッパアンティーク参考</span>
+                    <span class="text-xs font-bold text-amber-900/60 block mb-2">✨ 輸入家具・ヨーロッパアンティーク参考 (クリックで拡大します)</span>
                     <div class="grid grid-cols-5 gap-1.5">
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-amber-100">
-                        <img id="img-furniture-ref1" src="" alt="家具参考1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-furniture-ref1" src="" alt="ヨーロッパクラシックテーブル" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-amber-100">
-                        <img id="img-furniture-ref2" src="" alt="家具参考2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-furniture-ref2" src="" alt="クラシックチェア" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-amber-100">
-                        <img id="img-furniture-ref3" src="" alt="家具参考3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-furniture-ref3" src="" alt="ロココ調インテリア" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-amber-100">
-                        <img id="img-furniture-ref4" src="" alt="家具参考4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-furniture-ref4" src="" alt="アンティークガラスキャビネット" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                       <div class="aspect-square bg-gray-100 rounded overflow-hidden border border-amber-100">
-                        <img id="img-furniture-ref5" src="" alt="家具参考5" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                        <img id="img-furniture-ref5" src="" alt="輸入ソファー空間" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                       </div>
                     </div>
                   </div>
@@ -440,7 +440,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <!-- 事業項目1 - 土地、遊休地の高品質イメージ画像 -->
           <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-             <img id="img-land-proposal" src="" alt="荒廃地・遊休地の緑野" class="w-full h-48 object-cover" />
+             <img id="img-land-proposal" src="" alt="荒廃地・遊休地の緑野" class="w-full h-48 object-cover cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
             <div class="p-6">
               <h3 class="text-xl font-bold text-emerald-900 mb-3 border-b-2 border-emerald-100 pb-2">1. 地域環境整備・土地活用提案</h3>
               <p class="text-gray-700 mb-3 text-sm leading-relaxed">荒廃地、遊休地、谷地形、管理が行き届きにくい土地等について、地域環境改善、安全性向上、土地の有効活用を目的とした提案活動を行っております。</p>
@@ -452,13 +452,13 @@
                 <span class="text-[11px] font-bold text-gray-400 block mb-2">🌿 遊休地・環境改善参考</span>
                 <div class="grid grid-cols-3 gap-2">
                   <div class="aspect-[4/3] bg-gray-100 rounded overflow-hidden">
-                    <img id="img-land-ref1" src="" alt="土地参考1" class="w-full h-full object-cover" />
+                    <img id="img-land-ref1" src="" alt="遊休地 現地調査 1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                   </div>
                   <div class="aspect-[4/3] bg-gray-100 rounded overflow-hidden">
-                    <img id="img-land-ref2" src="" alt="土地参考2" class="w-full h-full object-cover" />
+                    <img id="img-land-ref2" src="" alt="田園風景・空地 2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                   </div>
                   <div class="aspect-[4/3] bg-gray-100 rounded overflow-hidden">
-                    <img id="img-land-ref3" src="" alt="土地参考3" class="w-full h-full object-cover" />
+                    <img id="img-land-ref3" src="" alt="里山・緑地環境 3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
                   </div>
                 </div>
               </div>
@@ -468,11 +468,11 @@
 
           <!-- 事業項目2 - 盛土・開発現場の測量・設計イメージ画像 -->
           <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-             <img id="img-embankment" src="" alt="盛土現場の様子" class="w-full h-48 object-cover" />
+             <img id="img-embankment" src="" alt="盛土現場の様子" class="w-full h-48 object-cover cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
             <div class="p-6">
               <h3 class="text-xl font-bold text-emerald-900 mb-3 border-b-2 border-emerald-100 pb-2">2. 盛土関連事業の調整・取りまとめ</h3>
               <p class="text-gray-700 mb-3 text-sm leading-relaxed">地域環境改善及び土地の有効活用を目的とした盛土関連事業について、地主様対応、地域説明、関係事業者との調整、事業計画の取りまとめ等を行っております。</p>
-              <p class="text-gray-700 mb-3 text-sm leading-relaxed">盛土関連事業は, 地域住民の皆様の理解, 安全対策, 法令順守, 行政手続き, 関係事業者との連携が重要となる事業です。</p>
+              <p class="text-gray-700 mb-3 text-sm leading-relaxed">盛土関連事業は、地域住民の皆様の理解, 安全対策, 法令順守, 行政手続き, 関係事業者との連携が重要となる事業です。</p>
               <p class="text-gray-700 mb-4 text-sm leading-relaxed">当社では、必要に応じて測量, 設計, 施工、運搬、各種申請等に関わる専門事業者と連携し、事業全体が適切かつ円滑に進むよう調整を行っております。当社は、地域との対話を大切にし、不安や疑問を残さない丁寧な説明を心掛け、透明性のある事業推進に努めております。</p>
               
               <!-- 盛土関連事業の参考画像（3枚） -->
@@ -480,13 +480,13 @@
                 <span class="text-[11px] font-bold text-gray-400 block mb-2">🚜 現場整備・計画調査参考</span>
                 <div class="grid grid-cols-3 gap-2">
                   <div class="aspect-[4/3] bg-gray-100 rounded overflow-hidden">
-                    <img id="img-emb-ref1" src="" alt="盛土参考1" class="w-full h-full object-cover" />
+                    <img id="img-emb-ref1" src="" alt="盛土・造成工事現場" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
                   </div>
                   <div class="aspect-[4/3] bg-gray-100 rounded overflow-hidden">
-                    <img id="img-emb-ref2" src="" alt="盛土参考2" class="w-full h-full object-cover" />
+                    <img id="img-emb-ref2" src="" alt="測量・設計の様子" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
                   </div>
                   <div class="aspect-[4/3] bg-gray-100 rounded overflow-hidden">
-                    <img id="img-emb-ref3" src="" alt="盛土参考3" class="w-full h-full object-cover" />
+                    <img id="img-emb-ref3" src="" alt="行政確認・打ち合わせ" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
                   </div>
                 </div>
               </div>
@@ -521,7 +521,7 @@
           <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
             <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full w-max mb-3 block">経営サポート</span>
             <h3 class="text-xl font-bold text-emerald-900 mb-3">飲食店運営経験を活かした相談活動</h3>
-            <p class="text-gray-700 mb-3">過去にラーメン店をはじめとする飲食店を実際に開業・運営していた経験をベースに、店舗運営, 開業, メニュー開発, 集客対策, 店舗の撤退にいたるまで、現場目線に立った親身なアドバイスや情報交換を行っております。</p>
+            <p class="text-gray-700 mb-3">過去にラーメン店をはじめとする飲食店を実際に開業・運営していた経験をベースに、店舗運営、開業, メニュー開発、集客対策、店舗の撤退にいたるまで、現場目線に立った親身なアドバイスや情報交換を行っております。</p>
             <p class="text-gray-700 text-sm">無理なコンサルタントを気取るのではない、実際の店舗経営者の方々と同じ視点で、課題解決に必要な提携ネットワークへの紹介や橋渡しを含めた支援を重視しております。</p>
           </div>
 
@@ -816,13 +816,13 @@
             <h3 class="text-lg font-bold text-emerald-900 mb-4">🤝 対話・地域・日々の活動</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden border border-gray-200">
-                <img id="img-profile-ref1" src="" alt="活動参考1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img id="img-profile-ref1" src="" alt="活動参考1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
               </div>
               <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden border border-gray-200">
-                <img id="img-profile-ref2" src="" alt="活動参考2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img id="img-profile-ref2" src="" alt="活動参考2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
               </div>
               <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden border border-gray-200">
-                <img id="img-profile-ref3" src="" alt="活動参考3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img id="img-profile-ref3" src="" alt="活動参考3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openLightbox(this.src, this.alt)" />
               </div>
             </div>
           </div>
@@ -855,16 +855,19 @@
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         
-        <!-- 案内カード -->
-        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-150 mb-10 md:flex items-center justify-between gap-6">
+        <!-- 案内カード（メンバーズカードお申し込みを強調） -->
+        <div class="bg-gradient-to-r from-emerald-800 to-emerald-950 text-white rounded-2xl p-6 md:p-8 shadow-md border border-emerald-700/30 mb-10 md:flex items-center justify-between gap-6">
           <div class="mb-4 md:mb-0">
-            <h3 class="text-lg font-bold text-emerald-900 mb-1">さらにお得になる！メンバーズカード</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">
-              当店では、日頃よりご愛顧いただいているお客様に向け、お値引きされた特別価格で施術を受けられるお得なメンバーシップ制度をご用意しております。
+            <h3 class="text-xl font-bold text-amber-300 mb-2 flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="text-amber-300 h-5 w-5 animate-pulse"></i>
+              メンバーズカードのお申し込みでメニューが「500円引き」！
+            </h3>
+            <p class="text-sm text-emerald-100 leading-relaxed max-w-2xl">
+              店頭にてメンバーズカードにお申し込みいただくと、次回以降、カットやカラー、パーマなどの各種メニューが通常価格から<strong class="text-white text-base">いつでも500円お値引き</strong>となります。ぜひお気軽にお申し込みください。
             </p>
           </div>
-          <div class="bg-amber-50 border border-amber-200 text-amber-900 rounded-xl p-4 text-sm font-bold text-center flex-shrink-0">
-            メンバーいつでも特別お値引き価格 ✂
+          <div class="bg-amber-500 text-slate-950 rounded-xl px-5 py-4 text-sm font-black text-center flex-shrink-0 shadow-lg">
+            いつでも 500円OFF ✂
           </div>
         </div>
 
@@ -884,8 +887,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">ドライカット</h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 2,500円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 2,000円</span>
+                    <span class="text-lg font-bold text-emerald-800">2,500円</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">シャンプー・ブローなし、ドライ状態でのシンプルなカットです。</p>
@@ -894,13 +896,12 @@
               <!-- 2 -->
               <div class="border-b border-gray-100 pb-4">
                 <div class="flex justify-between items-baseline mb-2">
-                  <h4 class="font-bold text-gray-800 text-base">カットのみ (シャンプー、カット、ブロー)</h4>
+                  <h4 class="font-bold text-gray-800 text-base">カットのみ</h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 3,000円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 2,500円</span>
+                    <span class="text-lg font-bold text-emerald-800">3,000円</span>
                   </div>
                 </div>
-                <p class="text-xs text-gray-500">基本のシャンプー、カット、スタイリングが含まれます。</p>
+                <p class="text-xs text-gray-500">基本のシャンプー、カット、ブローが含まれます。</p>
               </div>
 
               <!-- 3 -->
@@ -908,32 +909,29 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">CUTフル <span class="text-xs font-normal text-gray-500">(高校生以上)</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 4,000円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 3,500円</span>
+                    <span class="text-lg font-bold text-emerald-800">4,000円</span>
                   </div>
                 </div>
-                <p class="text-xs text-gray-500">シャンプー、カット、本格マッサージ、シェービング（お顔剃り）、ブローの充実フルコース。</p>
+                <p class="text-xs text-gray-500">シャンプー、カット、マッサージ、シェービング、ブローが含まれます。</p>
               </div>
 
               <!-- 4 -->
               <div class="border-b border-gray-100 pb-4">
                 <div class="flex justify-between items-baseline mb-2">
-                  <h4 class="font-bold text-gray-800 text-base">小学生カット</h4>
+                  <h4 class="font-bold text-gray-800 text-base">小学生</h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 2,500円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 2,300円</span>
+                    <span class="text-lg font-bold text-emerald-800">2,500円</span>
                   </div>
                 </div>
-                <p class="text-xs text-gray-500">通常はカット・シャンプー・ブロー、メンバーはシャンプー・カット・シェービング・ブローが含まれます。</p>
+                <p class="text-xs text-gray-500">カット、シャンプー、ブローが含まれます。</p>
               </div>
 
               <!-- 5 -->
               <div>
                 <div class="flex justify-between items-baseline mb-2">
-                  <h4 class="font-bold text-gray-800 text-base">中学生カット</h4>
+                  <h4 class="font-bold text-gray-800 text-base">中学生</h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 3,500円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 3,000円</span>
+                    <span class="text-lg font-bold text-emerald-800">3,500円</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">カット、シャンプー、シェービング、ブローが含まれます。</p>
@@ -955,8 +953,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">グレイカラー <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">カットフル込</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 6,800円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 6,300円</span>
+                    <span class="text-lg font-bold text-emerald-800">6,800円</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">白髪を綺麗にカバーしながら自然に染める、カットフル（顔剃り・マッサージ付）込みのお得プラン。</p>
@@ -967,8 +964,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">ファッションカラー <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">カットフル込</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 7,300円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 6,800円</span>
+                    <span class="text-lg font-bold text-emerald-800">7,300円</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">お好みの色調でおしゃれに染める、カットフル込みプラン。</p>
@@ -979,8 +975,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">ブリーチメッシュ <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">カットフル込</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 11,000円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 10,100円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">11,000円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">立体的な動きを出すメッシュデザイン。カットフル料金も含みます。</p>
@@ -989,10 +984,9 @@
               <!-- 4 -->
               <div class="border-b border-gray-100 pb-4">
                 <div class="flex justify-between items-baseline mb-2">
-                  <h4 class="font-bold text-gray-800 text-base">ブリーチのみ <span class="text-xs font-normal text-gray-500">(単品)</span></h4>
+                  <h4 class="font-bold text-gray-800 text-base">ブリーチのみ</h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 7,000円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 6,600円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">7,000円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">ハイトーンベースを作るための髪の脱色メニューです。</p>
@@ -1001,10 +995,9 @@
               <!-- 5 -->
               <div class="border-b border-gray-100 pb-4">
                 <div class="flex justify-between items-baseline mb-2">
-                  <h4 class="font-bold text-gray-800 text-base">グレイカラーのみ <span class="text-xs font-normal text-gray-500">(単品)</span></h4>
+                  <h4 class="font-bold text-gray-800 text-base">グレイカラーのみ</h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 4,500円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 4,000円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">4,500円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">カットは行わず、白髪染めのみをプロの手で綺麗に仕上げます。</p>
@@ -1013,10 +1006,9 @@
               <!-- 6 -->
               <div>
                 <div class="flex justify-between items-baseline mb-2">
-                  <h4 class="font-bold text-gray-800 text-base">ファッションカラーのみ <span class="text-xs font-normal text-gray-500">(単品)</span></h4>
+                  <h4 class="font-bold text-gray-800 text-base">ファッションカラーのみ</h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 5,500円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 5,000円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">5,500円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">カットを含まない、おしゃれ染めのみの単品メニューです。</p>
@@ -1038,8 +1030,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">ポイントパーマ <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">カットフル込</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 6,500円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 6,000円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">6,500円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">前髪やトップなど、部分的なボリュームアップに。カットフル込み。</p>
@@ -1050,8 +1041,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">部分パーマ <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">カットフル込</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 7,500円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 7,000円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">7,500円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">必要な部分のみ部分的にデザインパーマを施します。カットフル込み。</p>
@@ -1062,8 +1052,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">全体パーマ <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">カットフル込</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 9,500円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 9,000円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">9,500円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">髪全体に綺麗なウェーブや動きを施し、スタイルチェンジ。カットフル込み。</p>
@@ -1074,8 +1063,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">縮毛矯正 <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">カットフル込</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 11,000円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 10,000円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">11,000円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">うねりをさらさらで滑らかなストレートヘアに整えます。カットフル込み。</p>
@@ -1086,8 +1074,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">部分縮毛矯正 <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">カットフル込</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 6,500円〜</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 6,000円〜</span>
+                    <span class="text-lg font-bold text-emerald-800">6,500円～</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">気になる前髪やくせの強い箇所だけをピンポイントで矯正。カットフル込み。</p>
@@ -1109,8 +1096,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">シェービングのみ <span class="text-xs font-normal text-gray-500">(メンズ)</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 2,000円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 1,500円</span>
+                    <span class="text-lg font-bold text-emerald-700">2,000円</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">お髭まわりのほか、眉や産毛をすっきりと剃り上げ、清潔感を保ちます。</p>
@@ -1121,8 +1107,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">レディースシェービング</h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 2,500円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 2,000円</span>
+                    <span class="text-lg font-bold text-emerald-700">2,500円</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">女性のお客様専用のお顔剃り。お肌がワントーン明るくなり、お化粧ノリが良くなります。</p>
@@ -1133,8 +1118,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">ディプレイヤートリートメント <span class="text-xs font-normal text-gray-500">(3ステップ)</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 4,500円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 4,500円</span>
+                    <span class="text-lg font-bold text-emerald-700">4,500円</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">優れた補修成分を3段階に分けて髪に定着させる高保湿トリートメントメニューです。</p>
@@ -1145,8 +1129,7 @@
                 <div class="flex justify-between items-baseline mb-2">
                   <h4 class="font-bold text-gray-800 text-base">ディプレイヤートリートメント <span class="text-xs font-normal text-gray-500">(5ステップ)</span></h4>
                   <div class="text-right">
-                    <span class="text-sm text-gray-400 mr-2">通常 5,500円</span>
-                    <span class="text-lg font-bold text-emerald-700">メンバー 5,000円</span>
+                    <span class="text-lg font-bold text-emerald-800">5,500円</span>
                   </div>
                 </div>
                 <p class="text-xs text-gray-500">ハイダメージ毛も内部から補修し、極上の手触りと艶をプラスする5段階ケアシステム。</p>
@@ -1422,6 +1405,19 @@
   </footer>
 
   <!-- ==========================================
+       画像拡大モーダル (ライトボックス)
+       ========================================== -->
+  <div id="image-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center hidden" onclick="closeLightbox()">
+    <div class="relative max-w-4xl max-h-[90vh] p-4 flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+      <button class="absolute top-4 right-4 text-white hover:text-gray-300 z-10 transition-colors bg-black/40 p-2 rounded-full" onclick="closeLightbox()">
+        <i data-lucide="x" class="h-8 w-8"></i>
+      </button>
+      <img id="modal-img" src="" alt="拡大画像" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl select-none" />
+      <p id="modal-caption" class="text-white text-sm mt-4 font-semibold text-center tracking-wider drop-shadow-md bg-black/60 px-4 py-2 rounded-full"></p>
+    </div>
+  </div>
+
+  <!-- ==========================================
        JavaScript：動的制御、画像の一元管理・適用
        ========================================== -->
   <script>
@@ -1454,7 +1450,7 @@
         'img-cleanup-activity': IMAGE_MASTER.cleanupActivity,
         'img-volunteer-recruit': IMAGE_MASTER.volunteerRecruit,
         
-        // 新しく追加された参考画像（19枚）
+        // 参考画像（19枚）
         'img-barber-ref1': IMAGE_MASTER.barberRef1,
         'img-barber-ref2': IMAGE_MASTER.barberRef2,
         'img-barber-ref3': IMAGE_MASTER.barberRef3,
@@ -1493,6 +1489,32 @@
             };
           }
         }
+      }
+    }
+
+    // ------------------------------------------
+    // 【画像拡大モーダル用関数】
+    // ------------------------------------------
+    function openLightbox(src, alt) {
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-img');
+      const modalCaption = document.getElementById('modal-caption');
+      if (modal && modalImg) {
+        modalImg.src = src;
+        if (modalCaption) {
+          modalCaption.textContent = alt || '参考画像';
+        }
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // 背後のスクロールを固定
+        lucide.createIcons();
+      }
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('image-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = ''; // スクロール固定の解除
       }
     }
 
